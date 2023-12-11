@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> </head>
+    <body>
+        <div
+            id="maplegend"
+            class="maplegend"
+            style="
+              bottom: 20px;
+              right: 5px;
+              position: fixed;
+              z-index: 9999;
+              background-color: rgba(255, 255, 255, 0.8);
+              padding: 10px;
+              border-radius: 5px;
+              font-size: 14px;
+            "
+        >
+            <div class="legend-title">Légende</div>
+            <div class="legend-scale">
+                <ul class="legend-labels">
+                    <li><span style='background:#f1eef6;opacity:1.0;'></span>Faible</li>
+                    <li><span style='background:#bdc9e1;opacity:1.0;'></span>Moyen</li>
+                    <li><span style='background:#74a9cf;opacity:1.0;'></span>Fort</li>
+                    <li><span style='background:#0570b0;opacity:1.0;'></span>Très fort</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
+
+<style type="text/css">
+    .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 90%;
+    }
+    .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        float: left;
+        list-style: none;
+    }
+    .maplegend .legend-scale ul li {
+        font-size: 80%;
+        list-style: none;
+        margin-left: 0;
+        line-height: 18px;
+        margin-bottom: 2px;
+    }
+    .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 16px;
+        width: 30px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 1px solid #999;
+    }
+    .maplegend .legend-source {
+        font-size: 80%;
+        color: #777;
+        clear: both;
+    }
+    .maplegend a {
+        color: #777;
+    }
+</style>
